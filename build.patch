@@ -1,0 +1,12 @@
+diff -purN wordpress.org/Makefile wordpress/Makefile
+--- wordpress.org/Makefile	1970-01-01 00:00:00.000000000 +0000
++++ wordpress/Makefile	2019-05-17 13:25:39.600548223 +0000
+@@ -0,0 +1,8 @@
++all: nope
++
++nope:
++	echo "No build"
++	
++install:
++	mkdir -p $(DESTDIR)/usr/share/wordpress
++	cp -a * $(DESTDIR)/usr/share/wordpress
